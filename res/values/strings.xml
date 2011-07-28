@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Mobile Cloud Controller</string>
+	<string name="app_name">MobileCloudController</string>
+
+    <string name="menu_insert">Add Provider</string>
+    <string name="menu_delete">Delete Provider</string>
+    <string name="menu_insert_provider_account">Create new Account</string>
+    <string name="menu_delete_provider_account">Delete Account</string>
+    <string name="menu_create_instance">Delete Account</string>
+
+    <string name="menu_insert_instance">Create Instance</string>
+    <string name="no_providers">There are no Providers currently saved</string>
+    <string name="edit_provider">Edit Provider</string>
+    <string name="show_provider_accounts">Provider Accounts</string>
+
+    <string name="no_provider_account">There are no Accounts setup for this provider</string>
+    <string name="edit_provider_account">Edit Account</string>
+
+    <string name="no_hardware_profile">There are no Hardware Profiles currently imported for this account, please refresh</string>
+    <string name="no_realms">There are no Realms currently imported for this account, please refresh</string>
+    <string name="no_images">There are no Images currently imported for this account, please refresh</string>
+    <string name="no_instances">There are no Hardware Profiles currently created in this account, press Menu to create a new Instance</string>
+    
+    <string name="name">Name</string>
+    <string name="url">URL</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="manage">Manage Account</string>
+	<string name="new_instance">Create Instance</string>
+    <string name="provider_name">Provider</string>
+    <string name="provider">Provider</string>
+    <string name="refresh">Refresh</string>
+    <string name="providers">Providers</string>
+    <string name="cont">Continue</string>
+
+    <string name="memory">Memory</string>
+    <string name="cpu">CPU</string>
+    <string name="storage">Storage</string>
+    <string name="architecture">Architecture</string>
+    <string name="range">Range</string>
+    <string name="value">Default Value</string>
+    <string name="unit">Unit</string>
+	<string name="id">ID</string>
+    <string name="description">Description</string>
+	<string name="owner">Owner</string>
+	<string name="limit">Limit</string>
+	<string name="save">Save</string>
+	<string name="new_account">New Account</string>
+	<string name="state">State</string>
+	<string name="realm">Realm</string>
+	<string name="image">Image</string>
+	<string name="hardware_profile">Hardware Profile</string>
+	<string name="default_account">Default</string>
+</resources>

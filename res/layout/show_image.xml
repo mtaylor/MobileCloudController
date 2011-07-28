@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/name"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+ 
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/description" 
+	 		  android:layout_below="@id/title_line"
+	 		  android:layout_alignParentLeft="true"
+	 		  android:layout_marginLeft="50dp" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/architecture_label"
+	  		  android:text="@string/architecture"
+	  		  android:layout_below="@id/description" />
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/architecture" 
+	 		  android:layout_below="@id/description" />
+	
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/owner_label"
+	  		  android:text="@string/owner"
+	  		  android:layout_below="@id/architecture" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/owner" 
+	 		  android:layout_below="@id/architecture" />
+
+	<Button android:id="@+id/confirmButton" 
+	        android:text="@string/confirm"
+	        android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+</RelativeLayout>

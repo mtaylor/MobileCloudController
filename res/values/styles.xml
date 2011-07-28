@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+	<style name="WindowTitleBackground">     
+		<item name="android:background">@color/titlebackgroundcolor</item>
+		<item name="android:textColor">@color/titletextcolor</item>
+	</style>
+
+	<style name="Layout" parent="@android:style/Widget.ListView">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">@color/background</item>
+	</style>
+
+	<style name="ListView" parent="@android:style/Widget.ListView">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:cacheColorHint">@color/cacheHint</item>
+	</style>
+
+	<style name="ListRow" parent="@android:style/Widget.ListView">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:background">@color/listBackground</item>
+		<item name="android:textColor">@color/listText</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="TextView" parent="@android:style/Widget.ListView">
+		<item name="android:background">@color/background</item>
+		<item name="android:textColor">@color/textColor</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="TextViewLabel" parent="@style/TextView">
+		<item name="android:textColor">@color/labelColor</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_marginLeft">50dp</item>
+	</style>
+
+	<style name="TextViewValue" parent="@style/TextView">
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginRight">50dp</item>
+	</style>
+
+	<style name="CheckBox">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginRight">50dp</item>
+		<item name="android:layout_marginTop">10dp</item>
+	</style>
+
+	<style name="EditView" parent="@style/TextViewValue">
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_marginLeft">50dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_marginBottom">10dp</item>
+	</style>
+
+	<style name="Line">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">2dp</item>
+		<item name="android:layout_marginBottom">10dp</item>
+		<item name="android:background">@color/mainColor</item>
+	</style>
+
+	<style name="TableRow">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:layout_marginBottom">10dp</item>
+		<item name="android:background">@color/mainColor</item>
+	</style>
+
+	<style name="Button">
+		<item name="android:layout_height">30dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_marginLeft">50dp</item>
+		<item name="android:layout_marginRight">50dp</item>
+		<item name="android:textColor">@color/buttonText</item>
+		<item name="android:background">@color/buttonBackground</item>
+	</style>
+</resources>

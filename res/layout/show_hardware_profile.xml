@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/name"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+
+		<TextView style="@style/TextViewLabel"
+				  android:id="@+id/memory_label"
+		  		  android:text="@string/memory"
+		  		  android:layout_below="@id/title_line" />
+		  		  
+		<TextView style="@style/TextViewValue"
+		 		  android:id="@+id/memory" 
+		 		  android:layout_below="@id/title_line" />
+
+		<TextView style="@style/TextViewLabel"
+				  android:id="@+id/cpu_label"
+		  		  android:text="@string/cpu"
+		  		  android:layout_below="@id/memory" />
+
+		<TextView style="@style/TextViewValue"
+		 		  android:id="@+id/cpu" 
+		 		  android:layout_below="@id/memory" />
+
+		<TextView style="@style/TextViewLabel"
+				  android:id="@+id/storage_label"
+		  		  android:text="@string/storage" 
+		  		  android:layout_below="@id/cpu" />
+
+		<TextView style="@style/TextViewValue"
+		 		  android:id="@+id/storage"
+		 		  android:layout_below="@id/cpu" />
+
+		<TextView style="@style/TextViewLabel"
+				  android:id="@+id/architecture_label"
+		  		  android:text="@string/architecture"
+		  		  android:layout_below="@id/storage" />
+
+		<TextView style="@style/TextViewValue"
+		 		  android:id="@+id/architecture"
+		 		  android:layout_below="@id/storage" />
+
+		<Button android:id="@+id/confirmButton" 
+	        	android:text="@string/confirm"
+	   	   	  	android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+</RelativeLayout>

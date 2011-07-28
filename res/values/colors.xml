@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <color name="titlebackgroundcolor">#005380</color>
+    <color name="titletextcolor">#000000</color>
+    <color name="titlelinecolor">#000000</color>
+    <color name="mainColor">#005380</color>
+    <color name="messageColor">#000000</color>
+    <color name="listBackground">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="listText">#005380</color>
+    <color name="textColor">#000000</color>
+    <color name="labelColor">#005380</color>
+    <color name="cacheHint">#FFFFFFFF</color>
+    <color name="buttonText">#005380</color>
+    <color name="buttonBackground">#FFFFFF</color>
+</resources>

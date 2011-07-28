@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.dcdroid">
+    <application android:icon="@drawable/icon">
+        <activity android:name=".ui.Home" android:label="@string/app_name" android:theme="@style/customTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.providers.ProviderEdit" />
+        <activity android:name=".ui.providers.ProviderShow" />
+        <activity android:name=".ui.provideraccounts.ProviderAccounts" />
+        <activity android:name=".ui.provideraccounts.ProviderAccountEdit" />
+        <activity android:name=".ui.provideraccounts.ProviderAccountShow" />
+        <activity android:name=".ui.instances.Instances" />
+        <activity android:name=".ui.instances.InstanceShow" />
+        <activity android:name=".ui.images.Images" />
+        <activity android:name=".ui.images.ImageShow" />
+        <activity android:name=".ui.hardwareprofiles.HardwareProfiles" />
+        <activity android:name=".ui.hardwareprofiles.HardwareProfileShow" />
+        <activity android:name=".ui.realms.Realms" />
+        <activity android:name=".ui.realms.RealmShow" />
+        <activity android:name=".ui.providers.Providers" />
+        <activity android:name=".ui.instances.NewInstance" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>

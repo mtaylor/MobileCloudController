@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/name"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+	
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/provider_label"
+	  		  android:text="@string/provider"
+	  		  android:layout_below="@id/title_line" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/provider" 
+	 		  android:layout_alignParentLeft="true"
+	 		  android:layout_marginLeft="50dp"
+	 		  android:layout_below="@id/provider_label" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/username_label"
+	  		  android:text="@string/username"
+	  		  android:layout_below="@id/provider" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/username" 
+	 		  android:layout_alignParentLeft="true"
+	 		  android:layout_marginLeft="50dp"
+	 		  android:layout_below="@id/username_label"
+	 		  android:layout_height="wrap_content" />
+
+	<CheckBox style="@style/CheckBox"
+			  android:id="@+id/default_account"
+        	  android:layout_below="@id/username" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/default_label"
+	  		  android:text="@string/default_account"
+	  		  android:layout_alignBottom="@id/default_account" /> 	
+</RelativeLayout>

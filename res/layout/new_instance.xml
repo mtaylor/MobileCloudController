@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/new_instance"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+	
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/image_label"
+	  		  android:text="@string/image"
+	  		  android:layout_below="@id/title_line" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/image" 
+	 		  android:layout_below="@id/title_line" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/hardware_profile_label"
+	  		  android:text="@string/hardware_profile"
+	  		  android:layout_below="@id/image_label" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/hardware_profile" 
+	 		  android:layout_below="@id/image_label" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/realm_label"
+	  		  android:text="@string/realm"
+	  		  android:layout_below="@id/hardware_profile" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/realm" 
+	 		  android:layout_below="@id/hardware_profile" />
+
+	<Button android:id="@+id/confirmButton" 
+	        android:text="@string/confirm"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+			android:layout_width="160dp"
+			android:layout_height="wrap_content" />
+
+	<Button android:id="@+id/cancelButton" 
+	        android:text="@string/cancel"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+			android:layout_width="160dp"
+			android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/new_instance"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+	
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/limit_label"
+	  		  android:text="@string/limit"
+	  		  android:layout_below="@id/title_line" /> 	
+
+	<TextView style="@style/TextViewValue"
+	 		  android:id="@+id/limit" 
+	 		  android:layout_below="@id/title_line" />
+
+	<Button android:id="@+id/confirmButton" 
+	        android:text="@string/confirm"
+	        android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+</RelativeLayout>

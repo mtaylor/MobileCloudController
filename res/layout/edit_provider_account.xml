@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  style="@style/Layout">
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line_top"
+		  android:layout_alignParentTop="true"
+		  android:layout_marginTop="10dp"
+		  android:layout_marginBottom="0dp" />
+		  
+	<TextView style="@style/TextView"
+			  android:id="@+id/title"
+			  android:text="@string/name"
+			  android:layout_width="fill_parent"
+			  android:gravity="center" 
+			  android:layout_below="@id/title_line_top" />
+
+	<View style="@style/Line"
+		  android:id="@+id/title_line"
+		  android:layout_below="@id/title"
+		  android:layout_marginBottom="20dp" />
+	
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/name_label"
+	  		  android:text="@string/name"
+	  		  android:layout_below="@id/title_line" /> 	
+
+	<EditText style="@style/EditView"
+			  android:id="@+id/name"
+			  android:layout_below="@id/name_label" />	
+			  
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/username_label"
+	  		  android:text="@string/username"
+	  		  android:layout_below="@id/name" /> 	
+
+	<EditText style="@style/EditView"
+			  android:id="@+id/username"
+			  android:layout_below="@id/username_label"
+			  android:layout_height="wrap_content" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/password_label"
+	  		  android:text="@string/password"
+	  		  android:layout_height="wrap_content"
+	  		  android:layout_below="@id/username" /> 	
+
+	<EditText style="@style/EditView"
+			  android:id="@+id/password"
+			  android:layout_below="@id/password_label"
+			  android:layout_height="wrap_content" />
+
+	<CheckBox style="@style/CheckBox"
+			  android:id="@+id/default_account"
+        	  android:layout_below="@id/password" />
+
+	<TextView style="@style/TextViewLabel"
+			  android:id="@+id/default_label"
+	  		  android:text="@string/default_account"
+	  		  android:layout_alignBottom="@id/default_account" /> 	
+
+	<Button style="@style/Button"
+			android:id="@+id/save"
+			android:text="@string/save"
+	  		android:layout_alignParentBottom="true" />
+
+	<View style="@style/Line"
+		  android:id="@+id/button_line"
+		  android:layout_above="@id/save" />
+</RelativeLayout>
