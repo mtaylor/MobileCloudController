@@ -1,6 +1,5 @@
 package org.deltacloud.api.client;
 
-import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
@@ -28,20 +27,17 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import android.util.Log;
-
 public class DeltaCloudClient implements API
 {
 	private static enum DCNS
 	{ 
 		INSTANCES, REALMS, IMAGES, HARDWARE_PROFILES, START, STOP, REBOOT, DESTROY, INSTANCE_STATES;
-		
-		@Override
+
 		public String toString()
 		{
 			return "/" + name().toLowerCase();
 		}
-	} 
+	}
 
 	private static enum RequestType { POST, GET };
 
@@ -61,35 +57,35 @@ public class DeltaCloudClient implements API
 		this.objectFactory = ObjectFactory.getInstance();
 	}
 
-	@Override
+
 	public Instance createInstance(String imageId, String hardwareProfileId, String realmId, String name) throws DeltaCloudClientException 
 	{
 		String query = "?image_id=" + imageId + "&hwp_id=" + hardwareProfileId + "&realm_id=" + realmId + "&name=" + "intance-name" + "&commit=create";
 		return objectFactory.createInstance(sendRequest(DCNS.INSTANCES + query, RequestType.POST));
 	}
 
-	@Override
+	
 	public HardwareProfile listHardwareProfile(String hardwareProfileId) throws DeltaCloudClientException 
 	{
 		String request = DCNS.HARDWARE_PROFILES + "/" + hardwareProfileId;
 		return objectFactory.createHardwareProfile(sendRequest(request, RequestType.GET));
 	}
 
-	@Override
+	
 	public List<HardwareProfile> listHardwareProfiles() throws DeltaCloudClientException 
 	{
 		String request = DCNS.HARDWARE_PROFILES.toString();
 		return objectFactory.createHardwareProfiles(sendRequest(request, RequestType.GET)).getHardwareProfiles();
 	}
 	
-	@Override
+	
 	public List<Image> listImages() throws DeltaCloudClientException 
 	{
 		String request = DCNS.IMAGES.toString();
 		return objectFactory.createImages(sendRequest(request, RequestType.GET)).getImages();
 	}
 
-	@Override
+	
 	public List<Image> listImages(Map<String, String> params) throws DeltaCloudClientException 
 	{
 		String request = DCNS.IMAGES.toString() + "?";
@@ -100,21 +96,21 @@ public class DeltaCloudClient implements API
 		return objectFactory.createImages(sendRequest(request, RequestType.GET)).getImages();
 	}
 
-	@Override
+	
 	public Image listImages(String imageId) throws DeltaCloudClientException 
 	{
 		String request = DCNS.IMAGES + "/" + imageId;
 		return objectFactory.createImages(sendRequest(request, RequestType.GET)).getImages().get(0);
 	}
 
-	@Override
+	
 	public List<Instance> listInstances() throws DeltaCloudClientException 
 	{
 		String request = DCNS.INSTANCES.toString();
 		return objectFactory.createInstances(sendRequest(request, RequestType.GET)).getInstances();
 	}
 
-	@Override
+	
 	public Instance listInstances(String instanceId) throws DeltaCloudClientException 
 	{
 //		String request = DCNS.INSTANCES + "/" + instanceId;
@@ -123,14 +119,14 @@ public class DeltaCloudClient implements API
 		return null;
 	}
 	
-	@Override
+	
 	public List<Realm> listRealms() throws DeltaCloudClientException 
 	{
 		String request = DCNS.REALMS.toString();
 		return objectFactory.createRealms(sendRequest(request, RequestType.GET)).getRealms();
 	}
 
-	@Override
+	
 	public Realm listRealms(String realmId) throws DeltaCloudClientException 
 	{
 		String request = DCNS.REALMS + "/" + realmId;
@@ -138,14 +134,14 @@ public class DeltaCloudClient implements API
 		return null;
 	}
 	
-	@Override
+	
 	public Instance createInstance(String imageId) throws DeltaCloudClientException 
 	{
 		String query = "?image_id=" + imageId;
 		return objectFactory.createInstance(sendRequest(DCNS.INSTANCES + query, RequestType.POST));
 	}
 
-	@Override
+	
 	public boolean performInstanceAction(String instanceId, String action) throws DeltaCloudClientException
 	{
 		Instance instance = listInstances(instanceId);
@@ -158,7 +154,7 @@ public class DeltaCloudClient implements API
 		return false;
 	}
 
-	@Override
+	
 	public boolean performAction(String href, String requestType) throws DeltaCloudClientException
 	{
 		try

@@ -39,10 +39,6 @@
 			  android:id="@+id/url" 
 			  android:layout_below="@id/url_label" />
 
-	<EditText style="@style/EditView"
-			  android:id="@+id/url" 
-			  android:layout_below="@id/url" />
-
 	<Button style="@style/Button"
 			android:id="@+id/save"
 			android:text="@string/save"

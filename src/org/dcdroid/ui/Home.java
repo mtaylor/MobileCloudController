@@ -157,7 +157,6 @@ public class Home extends Activity implements OnClickListener
     	bgThread.start();
     }
 
-	@Override
 	public void onClick(View v) 
 	{
 		Intent i;

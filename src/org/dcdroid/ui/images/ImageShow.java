@@ -79,8 +79,8 @@ public class ImageShow extends Activity implements OnClickListener
 		}
     }
 
-	@Override
-	public void onClick(View v) 
+
+	public void onClick(View v)
 	{
 		Intent i;
 		switch (v.getId()) 

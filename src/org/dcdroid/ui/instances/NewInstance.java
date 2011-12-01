@@ -40,7 +40,7 @@ public class NewInstance extends Activity implements OnClickListener
     
     private String realmExternalId;
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) 
     {
     	super.onCreate(savedInstanceState);
@@ -95,7 +95,7 @@ public class NewInstance extends Activity implements OnClickListener
     	bgThread.start();
     }
 
-	@Override
+
 	public void onClick(View v) 
 	{
 		switch (v.getId()) 

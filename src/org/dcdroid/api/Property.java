@@ -107,7 +107,7 @@ public class Property {
     			s += entry + unit + ", ";
     		}
     	}
-    	s += " (" + value + ")";
+    	s += " (" + value +  unit + ")";
     	return s;
     }
 }

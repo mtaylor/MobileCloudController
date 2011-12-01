@@ -28,8 +28,11 @@
 		  		  
 		<TextView style="@style/TextViewValue"
 		 		  android:id="@+id/memory" 
-		 		  android:layout_below="@id/title_line" />
-
+		 		  android:layout_below="@id/memory_label" 
+		 		  android:layout_alignParentLeft="true"
+		 		  android:layout_marginLeft="50dp"
+		 		  android:layout_marginBottom="10dp" />
+		 		  
 		<TextView style="@style/TextViewLabel"
 				  android:id="@+id/cpu_label"
 		  		  android:text="@string/cpu"
@@ -37,7 +40,10 @@
 
 		<TextView style="@style/TextViewValue"
 		 		  android:id="@+id/cpu" 
-		 		  android:layout_below="@id/memory" />
+		 		  android:layout_below="@id/cpu_label"
+		 		  android:layout_alignParentLeft="true"
+		 		  android:layout_marginLeft="50dp"
+		 		  android:layout_marginBottom="10dp" />
 
 		<TextView style="@style/TextViewLabel"
 				  android:id="@+id/storage_label"
@@ -46,7 +52,10 @@
 
 		<TextView style="@style/TextViewValue"
 		 		  android:id="@+id/storage"
-		 		  android:layout_below="@id/cpu" />
+		 		  android:layout_below="@id/storage_label"
+		 		  android:layout_alignParentLeft="true"
+		 		  android:layout_marginLeft="50dp"
+		 		  android:layout_marginBottom="10dp" />
 
 		<TextView style="@style/TextViewLabel"
 				  android:id="@+id/architecture_label"
@@ -55,7 +64,10 @@
 
 		<TextView style="@style/TextViewValue"
 		 		  android:id="@+id/architecture"
-		 		  android:layout_below="@id/storage" />
+		 		  android:layout_below="@id/architecture_label"
+		 		  android:layout_alignParentLeft="true"
+		 		  android:layout_marginLeft="50dp"
+		 		  android:layout_marginBottom="10dp" />
 
 		<Button android:id="@+id/confirmButton" 
 	        	android:text="@string/confirm"

@@ -103,7 +103,7 @@ public class InstanceShow extends Activity implements OnClickListener
     	}
     }
 
-	@Override
+
 	public void onClick(View v) 
 	{
 		sendRequest(links.get(v.getId()));

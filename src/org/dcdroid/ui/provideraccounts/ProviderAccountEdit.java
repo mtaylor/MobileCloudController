@@ -49,6 +49,8 @@ public class ProviderAccountEdit extends Activity
     	setContentView(R.layout.edit_provider_account);
 
     	titleText = (TextView) findViewById(R.id.title);
+    	titleText.setText("Provider Account");
+
     	nameText = (EditText) findViewById(R.id.name);
     	usernameText = (EditText) findViewById(R.id.username);
     	passwordText = (EditText) findViewById(R.id.password);
@@ -81,9 +83,9 @@ public class ProviderAccountEdit extends Activity
     
     private void populateFields() 
     {
-    	setTitle("Edit Account");
     	if(providerAccountId != null)
     	{
+        	setTitle("Edit Provider Account");
 	    	dbHelper.open();
 	        ProviderAccount pa = dbHelper.getProviderAcccount(providerAccountId);
 	        Map<String, String> settings = dbHelper.getSettings();
@@ -105,6 +107,7 @@ public class ProviderAccountEdit extends Activity
     	}
     	else
     	{
+        	setTitle("New Provider Account");
     		defaultCheck.setChecked(true);
     	}
     }

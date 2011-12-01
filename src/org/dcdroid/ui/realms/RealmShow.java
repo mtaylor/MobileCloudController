@@ -28,7 +28,7 @@ public class RealmShow extends Activity implements OnClickListener
 
     private Long realmId;
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) 
     {
     	super.onCreate(savedInstanceState);
@@ -80,7 +80,7 @@ public class RealmShow extends Activity implements OnClickListener
 		}
     }
 
-	@Override
+
 	public void onClick(View v) 
 	{
 		Intent i;

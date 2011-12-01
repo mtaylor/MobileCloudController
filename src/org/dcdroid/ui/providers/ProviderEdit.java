@@ -45,7 +45,8 @@ public class ProviderEdit extends Activity {
     	setContentView(R.layout.edit_provider);
 
     	titleText = (TextView) findViewById(R.id.title);
-    	titleText.setText("Edit Provider");
+    	titleText.setText("New Provider Account");
+    	
     	nameText = (EditText) findViewById(R.id.name);
     	urlText = (EditText) findViewById(R.id.url);
 
@@ -69,6 +70,7 @@ public class ProviderEdit extends Activity {
     {
     	if(providerId != null)
     	{
+        	setTitle("Edit Provider");
 	    	dbHelper = new DCDbAdapter(this);
 	    	dbHelper.open();
 	        Provider provider = dbHelper.getProvider(providerId);
@@ -76,6 +78,11 @@ public class ProviderEdit extends Activity {
 	        nameText.setText(provider.getName());
 	        urlText.setText(provider.getUrl());
 	        dbHelper.close();
+    	}
+    	else
+    	{
+        	setTitle("New Provider");
+        	titleText.setText("New Provider");
     	}
     }
     

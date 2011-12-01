@@ -5,17 +5,14 @@ import org.dcdroid.api.HardwareProfile;
 import org.dcdroid.api.Property;
 import org.dcdroid.ui.DCDbAdapter;
 import org.dcdroid.ui.provideraccounts.ProviderAccount;
-import org.dcdroid.ui.providers.Provider;
 import org.dcdroid.ui.realms.Realms;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 public class HardwareProfileShow extends Activity implements OnClickListener
@@ -105,7 +102,6 @@ public class HardwareProfileShow extends Activity implements OnClickListener
         }
     }
 
-	@Override
 	public void onClick(View v) 
 	{
 		Intent i;

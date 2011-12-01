@@ -89,14 +89,12 @@ public final class R {
         public static final int realm=0x7f07001f;
         public static final int realm_label=0x7f07001e;
         public static final int save=0x7f070008;
-        public static final int screen=0x7f070036;
         public static final int state=0x7f070031;
         public static final int state_label=0x7f070030;
         public static final int storage=0x7f070029;
         public static final int storage_label=0x7f070028;
         public static final int text1=0x7f070022;
         public static final int title=0x7f070002;
-        public static final int titleLine=0x7f070037;
         public static final int title_line=0x7f070003;
         public static final int title_line_top=0x7f070001;
         public static final int url=0x7f070007;
@@ -123,7 +121,6 @@ public final class R {
         public static final int show_provider=0x7f03000f;
         public static final int show_provider_account=0x7f030010;
         public static final int show_realm=0x7f030011;
-        public static final int title_bar=0x7f030012;
     }
     public static final class string {
         public static final int app_name=0x7f050001;

@@ -4,10 +4,8 @@ import org.deltacloud.api.client.DeltaCloudClient;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.sax.StartElementListener;
 import android.widget.Toast;
 
 public class DCRunnable implements Runnable 
@@ -82,7 +80,7 @@ public class DCRunnable implements Runnable
 		this.realmId = realmId;
 		this.intent = intent;
 	}
-	@Override
+
 	public void run() 
 	{
 		try

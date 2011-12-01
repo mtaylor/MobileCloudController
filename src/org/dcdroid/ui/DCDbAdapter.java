@@ -18,7 +18,6 @@ package org.dcdroid.ui;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.security.acl.Owner;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -706,14 +705,14 @@ public class DCDbAdapter
     		property.setUnit(cursor.getString(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_UNIT)));
     		property.setValue(cursor.getString(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_VALUE)));
     		
-    		if(property.getKind() == "range")
+    		if(property.getKind().toLowerCase().equals("range"))
     		{
     			Range range = new Range();
     			range.setFirst(cursor.getString(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_RANGE_FROM)));
-    			range.setFirst(cursor.getString(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_RANGE_TO)));
+    			range.setLast(cursor.getString(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_RANGE_TO)));
     			property.setRange(range);
     		}
-    		else if(property.getKind() == "enum")
+    		else if(property.getKind().toLowerCase().equals("enum"))
     		{
     			property.setEnum(getHardwareProfilePropertyEnums(cursor.getLong(cursor.getColumnIndex(HARDWARE_PROFILE_PROPERTIES_ID))));
     		}
